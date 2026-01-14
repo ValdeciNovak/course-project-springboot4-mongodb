@@ -31,7 +31,7 @@ Este projeto é um workshop prático para aprender a trabalhar com MongoDB em co
 ### Clonar repositório
 
 ```bash
-git clone https://github.com/seu-usuario/workshopmongo.git
+git clone https://github.com/ValdeciNovak/workshopmongo.git
 cd workshopmongo
 ```
 
@@ -77,17 +77,8 @@ O projeto segue a estrutura padrão do Spring Boot:
 
 Durante o desenvolvimento deste projeto, aprendi a integrar o Spring Boot com MongoDB, utilizando o Spring Data MongoDB para simplificar o acesso aos dados. Desafios enfrentados incluíram a modelagem de dados NoSQL e a implementação de consultas complexas. Conceitos aplicados: RESTful APIs, injeção de dependências, tratamento de exceções e persistência de dados em bancos NoSQL.
 
-## Próximos passos / Melhorias
-
-- Adicionar autenticação e autorização (ex: JWT).
-- Implementar paginação e ordenação nas consultas.
-- Criar interface frontend para consumir a API.
-- Refatorar para usar Spring Security.
-- Adicionar testes de integração.
-
 ## Autor
 
-Valdeci
-
-- GitHub: [seu-github](https://github.com/seu-usuario)
-- LinkedIn: [seu-linkedin](https://linkedin.com/in/seu-perfil)
+- Valdeci Novak Junior
+- GitHub: https://github.com/ValdeciNovak
+- LinkedIn - https://www.linkedin.com/in/valdecijuniordev/

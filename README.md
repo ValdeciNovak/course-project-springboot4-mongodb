@@ -1,8 +1,8 @@
-# Workshop Mongo
+# Workshop MongoDB com Spring Boot
 
 ## Descrição / Sobre o projeto
 
-Este projeto é um workshop prático para aprender a trabalhar com MongoDB em conjunto com o framework Spring Boot. O objetivo é criar uma API RESTful que gerencia usuários e posts, incluindo funcionalidades como comentários e consultas avançadas. O projeto resolve o problema de armazenar e recuperar dados não relacionais de forma eficiente, utilizando o MongoDB como banco de dados NoSQL. O objetivo principal é demonstrar a integração entre Spring Boot e MongoDB, aplicando conceitos de desenvolvimento de APIs modernas.
+O projeto tem como foco demonstrar a integração entre Spring Boot e MongoDB, aplicando conceitos de desenvolvimento de APIs REST modernas, como modelagem NoSQL, tratamento de exceções e consultas avançadas.
 
 ## Tecnologias utilizadas
 
@@ -18,7 +18,6 @@ Este projeto é um workshop prático para aprender a trabalhar com MongoDB em co
 - Sistema de comentários: Adicionar comentários aos posts.
 - Consultas avançadas: Busca de posts por texto, data, etc.
 - Tratamento de exceções: Manipulação de erros com respostas padronizadas.
-- O usuário consegue criar contas, publicar posts, comentar em posts e realizar buscas personalizadas.
 
 ## Como executar o projeto
 
@@ -65,6 +64,20 @@ O projeto segue a estrutura padrão do Spring Boot:
     - `exception/`: Exceções customizadas
 - `src/main/resources/`: Recursos estáticos e configurações (application.properties)
 - `src/test/`: Testes unitários
+
+## Endpoints principais
+
+| Método | Endpoint | Descrição |
+|------|--------|----------|
+| GET | `/users` | Lista todos os usuários |
+| GET | `/users/{id}` | Busca um usuário pelo ID |
+| POST | `/users` | Cria um novo usuário |
+| PUT | `/users/{id}` | Atualiza os dados de um usuário |
+| DELETE | `/users/{id}` | Remove um usuário |
+| GET | `/users/{id}/posts` | Lista os posts de um usuário |
+| GET | `/posts/{id}` | Busca um post pelo ID |
+| GET | `/posts/titlesearch?text=valor` | Busca posts pelo texto do título. Ex: /posts/titlesearch?text=spring | 
+| GET | `/posts/fullsearch` | Busca avançada de posts por texto e intervalo de datas. Ex: /posts/fullsearch?text=mongo&minDate=2023-01-01&maxDate=2024-01-01 | 
 
 ## Padrões utilizados
 
